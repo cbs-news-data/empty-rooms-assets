@@ -1,0 +1,172 @@
+/* styles.css*/
+
+/*main css*/
+
+/*fonts*/
+
+/*
+font-family: "brando", serif;
+font-weight: 400;
+font-style: normal;
+
+font-family: "brando", serif;
+font-weight: 400;
+font-style: italic;
+
+font-family: "brando", serif;
+font-weight: 700;
+font-style: normal;
+
+font-family: "brando", serif;
+font-weight: 700;
+font-style: italic;
+*/
+
+* {box-sizing: border-box;} 
+
+img {width: 100%; display: block;}
+
+.header-container {
+	background-color: black;
+	width: 100%;
+	height: 100vh;
+	position: relative;
+}
+
+.photo-animation-container {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+}
+
+.photo-animation {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.header-title {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	background-color: rgba(0,0,0,0.7);
+}
+
+.headline {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	color: white;
+	height: 100%;
+}
+
+.headline-content {padding: 10px;}
+
+.headline-content h1 {font-size: 85px; margin: 0px;}
+.headline-content p {font-size: 20px;}
+
+.ani-pic {position: absolute; opacity: 0;}
+
+.photo-animation-1 {display: none;}
+.photo-animation-2 {display: none;}
+
+.photo-animation-1 .pic1 {
+	width: 40%;
+	top: 25%;
+	left: 25%;
+}
+
+.photo-animation-1 .pic2 {
+	width: 25%;
+	top: 0%;
+	right: 0%;
+}
+
+.photo-animation-1 .pic3 {
+	width: 35%;
+	bottom: 0%;
+	left: 0%;
+}
+
+.photo-animation-1 .pic4 {
+	width: 29%;
+	bottom: 0%;
+	right: 0%;
+}
+
+.photo-animation-2 .pic1 {
+	width: 40%;
+	top: 50%;
+	left: 50%;
+}
+
+.photo-animation-2 .pic2 {
+	width: 25%;
+	top: 50%;
+	right: 50%;
+}
+
+.photo-animation-2 .pic3 {
+	width: 35%;
+	bottom: 50%;
+	left: 50%;
+}
+
+.photo-animation-2 .pic4 {
+	width: 29%;
+	bottom: 50%;
+	right: 50%;
+}
+
+.fadeInAndOut1 {
+	animation-name: InAndOut;
+	animation-duration: 10s;
+	animation-fill-mode: forwards;
+	animation-iteration-count: infinite;
+	animation-delay: 1s;
+}
+
+.fadeInAndOut2 {
+	animation-name: InAndOut;
+	animation-duration: 10s;
+	animation-fill-mode: forwards;
+	animation-iteration-count: infinite;
+	animation-delay: 2s;
+}
+
+.fadeInAndOut3 {
+	animation-name: InAndOut;
+	animation-duration: 10s;
+	animation-fill-mode: forwards;
+	animation-iteration-count: infinite;
+	animation-delay: 3s;
+}
+
+.fadeInAndOut4 {
+	animation-name: InAndOut;
+	animation-duration: 10s;
+	animation-fill-mode: forwards;
+	animation-iteration-count: infinite;
+	animation-delay: 4s;
+}
+
+@keyframes InAndOut{
+	0% {opacity: 0;}
+	30% {opacity: 1;}
+	70% {opacity: 1;}
+	100% {opacity: 0;}
+}
+
+/*media query for responsive design */
+
+@media only screen and (max-width: 550px) {
+
+	.headline-content h1 {font-size: 55px;}
+
+}
