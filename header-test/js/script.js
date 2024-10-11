@@ -13,16 +13,16 @@ $(document).ready(function(){ // begin document.ready block
 	var random_photo7
 	var random_photo8
 
-	var random_photo1 = Math.floor(Math.random() * ((Filenames.length-1) - 0) + 0)
-	var random_photo2 = Math.floor(Math.random() * ((Filenames.length-1) - 0) + 0)
-	var random_photo3 = Math.floor(Math.random() * ((Filenames.length-1) - 0) + 0)
-	var random_photo4 = Math.floor(Math.random() * ((Filenames.length-1) - 0) + 0)
-	var random_photo5 = Math.floor(Math.random() * ((Filenames.length-1) - 0) + 0)
-	var random_photo6 = Math.floor(Math.random() * ((Filenames.length-1) - 0) + 0)
-	var random_photo7 = Math.floor(Math.random() * ((Filenames.length-1) - 0) + 0)
-	var random_photo8 = Math.floor(Math.random() * ((Filenames.length-1) - 0) + 0)
+	// random_photo1 = Math.floor(Math.random() * ((Filenames.length-1) - 0) + 0)
+	// random_photo2 = Math.floor(Math.random() * ((Filenames.length-1) - 0) + 0)
+	// random_photo3 = Math.floor(Math.random() * ((Filenames.length-1) - 0) + 0)
+	// random_photo4 = Math.floor(Math.random() * ((Filenames.length-1) - 0) + 0)
+	// random_photo5 = Math.floor(Math.random() * ((Filenames.length-1) - 0) + 0)
+	// random_photo6 = Math.floor(Math.random() * ((Filenames.length-1) - 0) + 0)
+	// random_photo7 = Math.floor(Math.random() * ((Filenames.length-1) - 0) + 0)
+	// random_photo8 = Math.floor(Math.random() * ((Filenames.length-1) - 0) + 0)
 
-	console.log(random_photo1, random_photo2, random_photo3, random_photo4, random_photo5, random_photo6, random_photo7, random_photo8)
+	// console.log(random_photo1, random_photo2, random_photo3, random_photo4, random_photo5, random_photo6, random_photo7, random_photo8)
 
 	var photo_file1
 	var photo_file2
@@ -36,35 +36,238 @@ $(document).ready(function(){ // begin document.ready block
 	console.log(Filenames.length)
 	for(i = 0; i < Filenames.length; i++) {
 		// console.log(Filenames[i])
-		photo_file1 = Filenames[random_photo1]
-		photo_file2 = Filenames[random_photo2]
-		photo_file3 = Filenames[random_photo3]
-		photo_file4 = Filenames[random_photo4]
-		photo_file5 = Filenames[random_photo5]
-		photo_file6 = Filenames[random_photo6]
-		photo_file7 = Filenames[random_photo7]
-		photo_file8 = Filenames[random_photo8]
-		console.log(photo_file1, photo_file2, photo_file3, photo_file4, photo_file5, photo_file5, photo_file6, photo_file7, photo_file8)
+		// photo_file1 = Filenames[random_photo1]
+		// photo_file2 = Filenames[random_photo2]
+		// photo_file3 = Filenames[random_photo3]
+		// photo_file4 = Filenames[random_photo4]
+		// photo_file5 = Filenames[random_photo5]
+		// photo_file6 = Filenames[random_photo6]
+		// photo_file7 = Filenames[random_photo7]
+		// photo_file8 = Filenames[random_photo8]
+		// console.log(photo_file1, photo_file2, photo_file3, photo_file4, photo_file5, photo_file5, photo_file6, photo_file7, photo_file8)
 	}
 
+
+
+//____________________________HTML STUFF__________________________
+
+	//time interval for pic 1
+	var v = setInterval(function() {
+		// console.log("LETS DO IT!")
+		random_photo1 = Math.floor(Math.random() * ((Filenames.length-1) - 0) + 0)
+
+		for(i = 0; i < Filenames.length; i++) {photo_file1 = Filenames[random_photo1]}
+
+		$(".photo-animation-1 .pic1 img").attr('src', 'https://cbs-news-data.github.io/empty-rooms-assets/Resized/'+photo_file1)
+
+		$(".photo-animation-1 .pic1").css({
+			'top': (Math.floor(Math.random() * (10 - 0) + 0)) + '%',
+			'left': (Math.floor(Math.random() * (10 - 0) + 0)) + '%',
+			'height': (Math.floor(Math.random() * (30 - 15) + 15)) + 'vh',
+			'transform':'rotate('+ (Math.floor(Math.random() * (10 + 10) - 10)) +'deg)'
+		})
+		
+	}, 10000);
+
+	//time interval for pic 2
+	var v = setInterval(function() {
+		// console.log("LETS DO IT!")
+		random_photo2 = Math.floor(Math.random() * ((Filenames.length-1) - 0) + 0)
+
+		for(i = 0; i < Filenames.length; i++) {photo_file2 = Filenames[random_photo2]}
+
+		setTimeout(function() {
+			// the code in here will run some time in the future
+			$(".photo-animation-1 .pic2 img").attr('src', 'https://cbs-news-data.github.io/empty-rooms-assets/Resized/'+photo_file2)
+
+			$(".photo-animation-1 .pic2").css({
+				'top': (Math.floor(Math.random() * (10 - 0) + 0)) + '%',
+				'right': (Math.floor(Math.random() * (10 - 0) + 0)) + '%',
+				'height': (Math.floor(Math.random() * (30 - 15) + 15)) + 'vh',
+				'transform':'rotate('+ (Math.floor(Math.random() * (10 + 10) - 10)) +'deg)'
+				})
+		}, 1000);
+
+		
+		
+	}, 10000);
+
+
+	//time interval for pic 3
+	var v = setInterval(function() {
+		// console.log("LETS DO IT!")
+		random_photo3 = Math.floor(Math.random() * ((Filenames.length-1) - 0) + 0)
+
+		for(i = 0; i < Filenames.length; i++) {photo_file3 = Filenames[random_photo3]}
+
+		setTimeout(function() {
+			// the code in here will run some time in the future
+
+			$(".photo-animation-1 .pic3 img").attr('src', 'https://cbs-news-data.github.io/empty-rooms-assets/Resized/'+photo_file3)
+
+			$(".photo-animation-1 .pic3").css({
+				'bottom': (Math.floor(Math.random() * (10 - 0) + 0)) + '%',
+				'left': (Math.floor(Math.random() * (10 - 0) + 0)) + '%',
+				'height': (Math.floor(Math.random() * (30 - 15) + 15)) + 'vh',
+				'transform':'rotate('+ (Math.floor(Math.random() * (10 + 10) - 10)) +'deg)'
+			})
+
+		}, 2000);	
+		
+	}, 10000);
+
+	//time interval for pic 4
+	var v = setInterval(function() {
+		// console.log("LETS DO IT!")
+		random_photo4 = Math.floor(Math.random() * ((Filenames.length-1) - 0) + 0)
+
+		for(i = 0; i < Filenames.length; i++) {photo_file4 = Filenames[random_photo4]}
+
+		setTimeout(function() {
+			// the code in here will run some time in the future
+
+			$(".photo-animation-1 .pic4 img").attr('src', 'https://cbs-news-data.github.io/empty-rooms-assets/Resized/'+photo_file4)
+
+			$(".photo-animation-1 .pic4").css({
+				'bottom': (Math.floor(Math.random() * (10 - 0) + 0)) + '%',
+				'right': (Math.floor(Math.random() * (10 - 0) + 0)) + '%',
+				'height': (Math.floor(Math.random() * (30 - 15) + 15)) + 'vh',
+				'transform':'rotate('+ (Math.floor(Math.random() * (10 + 10) - 10)) +'deg)'
+			})
+
+		}, 3000);	
+		
+	}, 10000);
+
+	//time interval for pic 5
+	var v = setInterval(function() {
+		// console.log("LETS DO IT!")
+		random_photo5 = Math.floor(Math.random() * ((Filenames.length-1) - 0) + 0)
+
+		for(i = 0; i < Filenames.length; i++) {photo_file5 = Filenames[random_photo5]}
+
+		setTimeout(function() {
+			// the code in here will run some time in the future
+
+			$(".photo-animation-2 .pic1 img").attr('src', 'https://cbs-news-data.github.io/empty-rooms-assets/Resized/'+photo_file5)
+
+			$(".photo-animation-2 .pic1").css({
+				'top': (Math.floor(Math.random() * (45 - 25) + 25)) + '%',
+				'left': (Math.floor(Math.random() * (25 - 15) + 15)) + '%',
+				'height': (Math.floor(Math.random() * (30 - 15) + 15)) + 'vh',
+				'transform':'rotate('+ (Math.floor(Math.random() * (10 + 10) - 10)) +'deg)'
+			})
+
+		}, 1000);	
+		
+	}, 10000);
+
+	//time interval for pic 6
+	var v = setInterval(function() {
+		// console.log("LETS DO IT!")
+		random_photo6 = Math.floor(Math.random() * ((Filenames.length-1) - 0) + 0)
+
+		for(i = 0; i < Filenames.length; i++) {photo_file6 = Filenames[random_photo6]}
+
+		setTimeout(function() {
+			// the code in here will run some time in the future
+
+			$(".photo-animation-2 .pic2 img").attr('src', 'https://cbs-news-data.github.io/empty-rooms-assets/Resized/'+photo_file6)
+
+			$(".photo-animation-2 .pic2").css({
+				'top': (Math.floor(Math.random() * (25 - 15) + 15)) + '%',
+				'right': (Math.floor(Math.random() * (25 - 15) + 15)) + '%',
+				'height': (Math.floor(Math.random() * (30 - 15) + 15)) + 'vh',
+				'transform':'rotate('+ (Math.floor(Math.random() * (10 + 10) - 10)) +'deg)'
+			})
+
+		}, 2000);	
+		
+	}, 10000);
+
+	//time interval for pic 7
+	var v = setInterval(function() {
+		// console.log("LETS DO IT!")
+		random_photo7 = Math.floor(Math.random() * ((Filenames.length-1) - 0) + 0)
+
+		for(i = 0; i < Filenames.length; i++) {photo_file7 = Filenames[random_photo7]}
+
+		setTimeout(function() {
+			// the code in here will run some time in the future
+
+			$(".photo-animation-2 .pic3 img").attr('src', 'https://cbs-news-data.github.io/empty-rooms-assets/Resized/'+photo_file7)
+
+			$(".photo-animation-2 .pic3").css({
+				'bottom': (Math.floor(Math.random() * (45 - 25) + 25)) + '%',
+				'left': (Math.floor(Math.random() * (25 - 15) + 15)) + '%',
+				'height': (Math.floor(Math.random() * (30 - 15) + 15)) + 'vh',
+				'transform':'rotate('+ (Math.floor(Math.random() * (10 + 10) - 10)) +'deg)'
+			})
+
+		}, 3000);	
+		
+	}, 10000);
+
+	//time interval for pic 8
+	var v = setInterval(function() {
+		// console.log("LETS DO IT!")
+		random_photo8 = Math.floor(Math.random() * ((Filenames.length-1) - 0) + 0)
+
+		for(i = 0; i < Filenames.length; i++) {photo_file8 = Filenames[random_photo8]}
+
+		setTimeout(function() {
+			// the code in here will run some time in the future
+
+			$(".photo-animation-2 .pic4 img").attr('src', 'https://cbs-news-data.github.io/empty-rooms-assets/Resized/'+photo_file8)
+
+			$(".photo-animation-2 .pic4").css({
+				'bottom': (Math.floor(Math.random() * (25 - 15) + 15)) + '%',
+				'right': (Math.floor(Math.random() * (25 - 15) + 15)) + '%',
+				'height': (Math.floor(Math.random() * (30 - 15) + 15)) + 'vh',
+				'transform':'rotate('+ (Math.floor(Math.random() * (10 + 10) - 10)) +'deg)'
+			})
+
+		}, 4000);	
+		
+	}, 10000);
+
 	//put new filenames into html
-	$(".photo-animation-1 .pic1 img").attr('src', 'https://cbs-news-data.github.io/empty-rooms-assets/Resized/'+photo_file1)
+	// $(".photo-animation-1 .pic1 img").attr('src', 'https://cbs-news-data.github.io/empty-rooms-assets/Resized/'+photo_file1)
 
-	$(".photo-animation-1 .pic2 img").attr('src', 'https://cbs-news-data.github.io/empty-rooms-assets/Resized/'+photo_file2)
+	// $(".photo-animation-1 .pic2 img").attr('src', 'https://cbs-news-data.github.io/empty-rooms-assets/Resized/'+photo_file2)
 
-	$(".photo-animation-1 .pic3 img").attr('src', 'https://cbs-news-data.github.io/empty-rooms-assets/Resized/'+photo_file3)
+	// $(".photo-animation-1 .pic3 img").attr('src', 'https://cbs-news-data.github.io/empty-rooms-assets/Resized/'+photo_file3)
 
-	$(".photo-animation-1 .pic4 img").attr('src', 'https://cbs-news-data.github.io/empty-rooms-assets/Resized/'+photo_file4)
+	// $(".photo-animation-1 .pic4 img").attr('src', 'https://cbs-news-data.github.io/empty-rooms-assets/Resized/'+photo_file4)
 
-	$(".photo-animation-2 .pic1 img").attr('src', 'https://cbs-news-data.github.io/empty-rooms-assets/Resized/'+photo_file5)
+	// $(".photo-animation-2 .pic1 img").attr('src', 'https://cbs-news-data.github.io/empty-rooms-assets/Resized/'+photo_file5)
 
-	$(".photo-animation-2 .pic2 img").attr('src', 'https://cbs-news-data.github.io/empty-rooms-assets/Resized/'+photo_file6)
+	// $(".photo-animation-2 .pic2 img").attr('src', 'https://cbs-news-data.github.io/empty-rooms-assets/Resized/'+photo_file6)
 
-	$(".photo-animation-2 .pic3 img").attr('src', 'https://cbs-news-data.github.io/empty-rooms-assets/Resized/'+photo_file7)
+	// $(".photo-animation-2 .pic3 img").attr('src', 'https://cbs-news-data.github.io/empty-rooms-assets/Resized/'+photo_file7)
 
-	$(".photo-animation-2 .pic4 img").attr('src', 'https://cbs-news-data.github.io/empty-rooms-assets/Resized/'+photo_file8)
+	// $(".photo-animation-2 .pic4 img").attr('src', 'https://cbs-news-data.github.io/empty-rooms-assets/Resized/'+photo_file8)
 
-	//get random numbers for positions and sizes
+
+	//fade in/out first set of photos	
+	$(".photo-animation-1").fadeIn(1000)
+
+	$(".photo-animation-1 .pic1").addClass("fadeInAndOut1")
+	$(".photo-animation-1 .pic2").addClass("fadeInAndOut2")
+	$(".photo-animation-1 .pic3").addClass("fadeInAndOut3")
+	$(".photo-animation-1 .pic4").addClass("fadeInAndOut4")
+
+	//fade in/out second set of photos
+	$(".photo-animation-2").delay(1000).fadeIn(1000)
+
+	$(".photo-animation-2 .pic1").addClass("fadeInAndOut1")
+	$(".photo-animation-2 .pic2").addClass("fadeInAndOut2")
+	$(".photo-animation-2 .pic3").addClass("fadeInAndOut3")
+	$(".photo-animation-2 .pic4").addClass("fadeInAndOut4")
+
+
+
+//____________________________CSS STUFF: get random numbers for positions and sizes_____________________
 	
 	//sizes 25% to 35%
 	var num25to35 = Math.floor(Math.random() * (35 - 25) + 25);
@@ -79,73 +282,61 @@ $(document).ready(function(){ // begin document.ready block
 	console.log(num25to50)
 
 	//pic1: top left
-	$(".photo-animation-1 .pic1").css({
-		'top': (Math.floor(Math.random() * (10 - 0) + 0)) + '%',
-		'left': (Math.floor(Math.random() * (10 - 0) + 0)) + '%',
-		'width': (Math.floor(Math.random() * (35 - 25) + 25)) + '%',
-		'transform':'rotate('+ (Math.floor(Math.random() * (10 + 10) - 10)) +'deg)'
-	})
-	$(".photo-animation-2 .pic1").css({
-		'top': (Math.floor(Math.random() * (25 - 15) + 15)) + '%',
-		'left': (Math.floor(Math.random() * (25 - 15) + 15)) + '%',
-		'width': (Math.floor(Math.random() * (35 - 25) + 25)) + '%',
-		'transform':'rotate('+ (Math.floor(Math.random() * (10 + 10) - 10)) +'deg)'
-	})
+	// $(".photo-animation-1 .pic1").css({
+	// 	'top': (Math.floor(Math.random() * (10 - 0) + 0)) + '%',
+	// 	'left': (Math.floor(Math.random() * (10 - 0) + 0)) + '%',
+	// 	'width': (Math.floor(Math.random() * (35 - 25) + 25)) + '%',
+	// 	'transform':'rotate('+ (Math.floor(Math.random() * (10 + 10) - 10)) +'deg)'
+	// })
+	// $(".photo-animation-2 .pic1").css({
+	// 	'top': (Math.floor(Math.random() * (25 - 15) + 15)) + '%',
+	// 	'left': (Math.floor(Math.random() * (25 - 15) + 15)) + '%',
+	// 	'width': (Math.floor(Math.random() * (35 - 25) + 25)) + '%',
+	// 	'transform':'rotate('+ (Math.floor(Math.random() * (10 + 10) - 10)) +'deg)'
+	// })
 	//pic2: top right
-	$(".photo-animation-1 .pic2").css({
-		'top': (Math.floor(Math.random() * (10 - 0) + 0)) + '%',
-		'right': (Math.floor(Math.random() * (10 - 0) + 0)) + '%',
-		'width': (Math.floor(Math.random() * (35 - 25) + 25)) + '%',
-		'transform':'rotate('+ (Math.floor(Math.random() * (10 + 10) - 10)) +'deg)'
-	})
-	$(".photo-animation-2 .pic2").css({
-		'top': (Math.floor(Math.random() * (25 - 15) + 15)) + '%',
-		'right': (Math.floor(Math.random() * (25 - 15) + 15)) + '%',
-		'width': (Math.floor(Math.random() * (35 - 25) + 25)) + '%',
-		'transform':'rotate('+ (Math.floor(Math.random() * (10 + 10) - 10)) +'deg)'
-	})
+	// $(".photo-animation-1 .pic2").css({
+	// 	'top': (Math.floor(Math.random() * (10 - 0) + 0)) + '%',
+	// 	'right': (Math.floor(Math.random() * (10 - 0) + 0)) + '%',
+	// 	'width': (Math.floor(Math.random() * (35 - 25) + 25)) + '%',
+	// 	'transform':'rotate('+ (Math.floor(Math.random() * (10 + 10) - 10)) +'deg)'
+	// })
+	// $(".photo-animation-2 .pic2").css({
+	// 	'top': (Math.floor(Math.random() * (25 - 15) + 15)) + '%',
+	// 	'right': (Math.floor(Math.random() * (25 - 15) + 15)) + '%',
+	// 	'width': (Math.floor(Math.random() * (35 - 25) + 25)) + '%',
+	// 	'transform':'rotate('+ (Math.floor(Math.random() * (10 + 10) - 10)) +'deg)'
+	// })
 	//pic3: bottom left
-	$(".photo-animation-1 .pic3").css({
-		'bottom': (Math.floor(Math.random() * (10 - 0) + 0)) + '%',
-		'left': (Math.floor(Math.random() * (10 - 0) + 0)) + '%',
-		'width': (Math.floor(Math.random() * (35 - 25) + 25)) + '%',
-		'transform':'rotate('+ (Math.floor(Math.random() * (10 + 10) - 10)) +'deg)'
-	})
-	$(".photo-animation-2 .pic3").css({
-		'bottom': (Math.floor(Math.random() * (25 - 15) + 15)) + '%',
-		'left': (Math.floor(Math.random() * (25 - 15) + 15)) + '%',
-		'width': (Math.floor(Math.random() * (35 - 25) + 25)) + '%',
-		'transform':'rotate('+ (Math.floor(Math.random() * (10 + 10) - 10)) +'deg)'
-	})
+	// $(".photo-animation-1 .pic3").css({
+	// 	'bottom': (Math.floor(Math.random() * (10 - 0) + 0)) + '%',
+	// 	'left': (Math.floor(Math.random() * (10 - 0) + 0)) + '%',
+	// 	'width': (Math.floor(Math.random() * (35 - 25) + 25)) + '%',
+	// 	'transform':'rotate('+ (Math.floor(Math.random() * (10 + 10) - 10)) +'deg)'
+	// })
+	// $(".photo-animation-2 .pic3").css({
+	// 	'bottom': (Math.floor(Math.random() * (25 - 15) + 15)) + '%',
+	// 	'left': (Math.floor(Math.random() * (25 - 15) + 15)) + '%',
+	// 	'width': (Math.floor(Math.random() * (35 - 25) + 25)) + '%',
+	// 	'transform':'rotate('+ (Math.floor(Math.random() * (10 + 10) - 10)) +'deg)'
+	// })
 	//pic4: bottom right
-	$(".photo-animation-1 .pic4").css({
-		'bottom': (Math.floor(Math.random() * (10 - 0) + 0)) + '%',
-		'right': (Math.floor(Math.random() * (10 - 0) + 0)) + '%',
-		'width': (Math.floor(Math.random() * (35 - 25) + 25)) + '%',
-		'transform':'rotate('+ (Math.floor(Math.random() * (10 + 10) - 10)) +'deg)'
-	})
-	$(".photo-animation-2 .pic4").css({
-		'bottom': (Math.floor(Math.random() * (25 - 15) + 15)) + '%',
-		'right': (Math.floor(Math.random() * (25 - 15) + 15)) + '%',
-		'width': (Math.floor(Math.random() * (35 - 25) + 25)) + '%',
-		'transform':'rotate('+ (Math.floor(Math.random() * (10 + 10) - 10)) +'deg)'
-	})
+	// $(".photo-animation-1 .pic4").css({
+	// 	'bottom': (Math.floor(Math.random() * (10 - 0) + 0)) + '%',
+	// 	'right': (Math.floor(Math.random() * (10 - 0) + 0)) + '%',
+	// 	'width': (Math.floor(Math.random() * (35 - 25) + 25)) + '%',
+	// 	'transform':'rotate('+ (Math.floor(Math.random() * (10 + 10) - 10)) +'deg)'
+	// })
+	// $(".photo-animation-2 .pic4").css({
+	// 	'bottom': (Math.floor(Math.random() * (25 - 15) + 15)) + '%',
+	// 	'right': (Math.floor(Math.random() * (25 - 15) + 15)) + '%',
+	// 	'width': (Math.floor(Math.random() * (35 - 25) + 25)) + '%',
+	// 	'transform':'rotate('+ (Math.floor(Math.random() * (10 + 10) - 10)) +'deg)'
+	// })
 
-	//first set of photos	
-	$(".photo-animation-1").delay(1000).fadeIn(1000)
 
-	$(".photo-animation-1 .pic1").addClass("fadeInAndOut1")
-	$(".photo-animation-1 .pic2").addClass("fadeInAndOut2")
-	$(".photo-animation-1 .pic3").addClass("fadeInAndOut3")
-	$(".photo-animation-1 .pic4").addClass("fadeInAndOut4")
 
-	//second set of photos
-	$(".photo-animation-2").delay(2000).fadeIn(1000)
 
-	$(".photo-animation-2 .pic1").addClass("fadeInAndOut1")
-	$(".photo-animation-2 .pic2").addClass("fadeInAndOut2")
-	$(".photo-animation-2 .pic3").addClass("fadeInAndOut3")
-	$(".photo-animation-2 .pic4").addClass("fadeInAndOut4")
 
 }); //end document.ready block
 
