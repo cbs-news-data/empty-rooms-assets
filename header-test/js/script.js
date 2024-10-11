@@ -74,9 +74,9 @@ $(document).ready(function(){ // begin document.ready block
 				'height': (Math.floor(Math.random() * (30 - 15) + 15)) + 'vh',
 				'transform':'rotate('+ (Math.floor(Math.random() * (10 + 10) - 10)) +'deg)'
 			})
-		}, 1000);
+		}, 500);
 		
-	}, 10000);
+	}, 12000);
 
 	//time interval for pic 2
 	var v = setInterval(function() {
@@ -99,7 +99,7 @@ $(document).ready(function(){ // begin document.ready block
 
 		
 		
-	}, 10000);
+	}, 12000);
 
 
 	//time interval for pic 3
@@ -123,7 +123,7 @@ $(document).ready(function(){ // begin document.ready block
 
 		}, 2500);	
 		
-	}, 10000);
+	}, 12000);
 
 	//time interval for pic 4
 	var v = setInterval(function() {
@@ -146,7 +146,7 @@ $(document).ready(function(){ // begin document.ready block
 
 		}, 3500);	
 		
-	}, 10000);
+	}, 12000);
 
 	//time interval for pic 5
 	var v = setInterval(function() {
@@ -169,7 +169,7 @@ $(document).ready(function(){ // begin document.ready block
 
 		}, 2000);	
 		
-	}, 10000);
+	}, 12000);
 
 	//time interval for pic 6
 	var v = setInterval(function() {
@@ -192,7 +192,7 @@ $(document).ready(function(){ // begin document.ready block
 
 		}, 2500);	
 		
-	}, 10000);
+	}, 12000);
 
 	//time interval for pic 7
 	var v = setInterval(function() {
@@ -215,7 +215,7 @@ $(document).ready(function(){ // begin document.ready block
 
 		}, 3000);	
 		
-	}, 10000);
+	}, 12000);
 
 	//time interval for pic 8
 	var v = setInterval(function() {
@@ -238,7 +238,7 @@ $(document).ready(function(){ // begin document.ready block
 
 		}, 4500);	
 		
-	}, 10000);
+	}, 12000);
 
 	//time interval for pic 9
 	var v = setInterval(function() {
@@ -259,9 +259,9 @@ $(document).ready(function(){ // begin document.ready block
 				'transform':'rotate('+ (Math.floor(Math.random() * (10 + 10) - 10)) +'deg)'
 			})
 
-		}, 1000);	
+		}, 500);	
 		
-	}, 10000);
+	}, 12000);
 
 	//time interval for pic 10
 	var v = setInterval(function() {
@@ -284,7 +284,7 @@ $(document).ready(function(){ // begin document.ready block
 
 		}, 1000);	
 		
-	}, 10000);
+	}, 12000);
 
 	//put new filenames into html
 	// $(".photo-animation-1 .pic1 img").attr('src', 'https://cbs-news-data.github.io/empty-rooms-assets/Resized/'+photo_file1)
