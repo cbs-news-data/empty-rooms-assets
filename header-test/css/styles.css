@@ -56,7 +56,7 @@ img {width: 100%; display: block;}
 	height: 100%;
 	z-index: 1;
 	background-color: rgba(0,0,0,0.7);
-	/* display: none; */
+	display: none;
 }
 
 .headline {
@@ -104,7 +104,7 @@ img {width: 100%; display: block;}
 }
 
 .photo-animation-1 .pic3 {
-	height: 15vh;
+	height: 31vh;
 	width: auto;
 	bottom: 0%;
 	left: 0%;
@@ -119,12 +119,20 @@ img {width: 100%; display: block;}
 	transform: rotate(5deg);
 }
 
+.photo-animation-1 .pic5 {
+	height: 18vh;
+	width: auto;
+	top: 40%;
+	left: 1%;
+	transform: rotate(-5deg);
+}
+
 .photo-animation-2 .pic1 {
 	height: 21vh;
 	width: auto;
-	top: 20%;
-	left: 13%;
-	transform: rotate(8deg);
+	top: 10%;
+	left: 39%;
+	transform: rotate(-8deg);
 }
 
 .photo-animation-2 .pic2 {
@@ -138,8 +146,8 @@ img {width: 100%; display: block;}
 .photo-animation-2 .pic3 {
 	height: 22vh;
 	width: auto;
-	bottom: 25%;
-	left: 13%;
+	bottom: 5%;
+	left: 40%;
 	transform: rotate(-9deg);
 }
 
@@ -149,6 +157,14 @@ img {width: 100%; display: block;}
 	bottom: 28%;
 	right: 32%;
 	transform: rotate(9deg);
+}
+
+.photo-animation-2 .pic5 {
+	height: 18vh;
+	width: auto;
+	top: 45%;
+	right: 1%;
+	transform: rotate(4deg);
 }
 
 .fadeInAndOut1 {
@@ -181,6 +197,14 @@ img {width: 100%; display: block;}
 	animation-fill-mode: forwards;
 	animation-iteration-count: infinite;
 	animation-delay: 4000ms;
+}
+
+.fadeInAndOut5 {
+	animation-name: InAndOut;
+	animation-duration: 10000ms;
+	animation-fill-mode: forwards;
+	animation-iteration-count: infinite;
+	animation-delay: 1000ms;
 }
 
 @keyframes InAndOut{
