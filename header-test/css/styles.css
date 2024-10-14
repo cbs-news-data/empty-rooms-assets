@@ -27,7 +27,7 @@ font-style: italic;
 img {width: 100%; display: block;}
 
 .header-container {
-	background-color: #101010;;
+	background-color: #101010;
 	width: 100%;
 	height: 100vh;
 	position: relative;
@@ -76,12 +76,46 @@ img {width: 100%; display: block;}
 .ani-pic {
 	position: absolute; 
 	opacity: 0;
-	box-shadow: 0px 0px 25px white;
+	/* box-shadow: 0px 0px 25px white; */
+	/* z-index: 1; */
+	/* box-shadow:0px 0px 7px 7px black inset; */
+
+	-webkit-mask-image: linear-gradient(
+        to right, /* gradient direction */
+        rgba(0,0,0,0) 0%, /* transparent left 3% */
+        rgba(0,0,0,1) 7%, /* visible in the middle start */
+        rgba(0,0,0,1) 93%, /* visible in the middle end */ 
+        rgba(0,0,0,0) 100% /* transparent right 3% */ 
+    );
+	
 }
 
+	/* .ani-pic::after {
+		content: "";
+		display: block;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		width: 100%;
+		height: 100%;
+		box-shadow: 0px 0px 7px 7px #101010 inset, 0px 0px 7px 7px #101010;
+	
+	} */
+
+
 	.ani-pic img {
+		z-index:-1;
+   		position: relative;
 		height: 100%;
 		width: auto;
+
+		-webkit-mask-image: linear-gradient(
+			to bottom, /* gradient direction */
+			rgba(0,0,0,0) 0%, /* transparent top 3% */
+			rgba(0,0,0,1) 10%, /* visible in the middle start */
+			rgba(0,0,0,1) 90%, /* visible in the middle end */ 
+			rgba(0,0,0,0) 100% /* transparent bottom 3% */ 
+  );
 	}
 
 .photo-animation-1 {display: none;}
@@ -172,7 +206,7 @@ img {width: 100%; display: block;}
 	animation-duration: 12000ms;
 	animation-fill-mode: forwards;
 	animation-iteration-count: infinite;
-	animation-delay: 1000ms;
+	animation-delay: 0ms;
 }
 
 .fadeInAndOut2 {
@@ -180,7 +214,7 @@ img {width: 100%; display: block;}
 	animation-duration: 12000ms;
 	animation-fill-mode: forwards;
 	animation-iteration-count: infinite;
-	animation-delay: 2000ms;
+	animation-delay: 1000ms;
 }
 
 .fadeInAndOut3 {
@@ -188,7 +222,7 @@ img {width: 100%; display: block;}
 	animation-duration: 12000ms;
 	animation-fill-mode: forwards;
 	animation-iteration-count: infinite;
-	animation-delay: 3000ms;
+	animation-delay: 2000ms;
 }
 
 .fadeInAndOut4 {
@@ -196,7 +230,7 @@ img {width: 100%; display: block;}
 	animation-duration: 12000ms;
 	animation-fill-mode: forwards;
 	animation-iteration-count: infinite;
-	animation-delay: 4000ms;
+	animation-delay: 3000ms;
 }
 
 .fadeInAndOut5 {
@@ -204,7 +238,7 @@ img {width: 100%; display: block;}
 	animation-duration: 12000ms;
 	animation-fill-mode: forwards;
 	animation-iteration-count: infinite;
-	animation-delay: 1000ms;
+	animation-delay: 1500ms;
 }
 
 @keyframes InAndOut{
