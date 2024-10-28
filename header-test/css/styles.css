@@ -122,7 +122,7 @@ img {width: 100%; display: block;}
 .photo-animation-2 {display: none;}
 
 .photo-animation-1 .pic1 {
-	height: 30vh;
+	height: 35vh;
 	width: auto;
 	top: 5%;
 	left: 5%;
@@ -130,7 +130,7 @@ img {width: 100%; display: block;}
 }
 
 .photo-animation-1 .pic2 {
-	height: 20vh;
+	height: 22vh;
 	width: auto;
 	top: 0%;
 	right: 0%;
@@ -138,7 +138,7 @@ img {width: 100%; display: block;}
 }
 
 .photo-animation-1 .pic3 {
-	height: 31vh;
+	height: 36vh;
 	width: auto;
 	bottom: 0%;
 	left: 0%;
@@ -154,7 +154,7 @@ img {width: 100%; display: block;}
 }
 
 .photo-animation-1 .pic5 {
-	height: 18vh;
+	height: 20vh;
 	width: auto;
 	top: 40%;
 	left: 1%;
@@ -162,7 +162,7 @@ img {width: 100%; display: block;}
 }
 
 .photo-animation-2 .pic1 {
-	height: 21vh;
+	height: 40vh;
 	width: auto;
 	top: 10%;
 	left: 39%;
@@ -170,7 +170,7 @@ img {width: 100%; display: block;}
 }
 
 .photo-animation-2 .pic2 {
-	height: 18vh;
+	height: 29vh;
 	width: auto;
 	top: 15%;
 	right: 20%;
@@ -186,7 +186,7 @@ img {width: 100%; display: block;}
 }
 
 .photo-animation-2 .pic4 {
-	height: 17vh;
+	height: 33vh;
 	width: auto;
 	bottom: 28%;
 	right: 32%;
@@ -194,7 +194,7 @@ img {width: 100%; display: block;}
 }
 
 .photo-animation-2 .pic5 {
-	height: 18vh;
+	height: 26vh;
 	width: auto;
 	top: 45%;
 	right: 1%;
@@ -251,6 +251,96 @@ img {width: 100%; display: block;}
 }
 
 /*media query for responsive design */
+
+@media only screen and (max-width: 1200px) {
+
+	.photo-animation-1 .pic1 {
+		height: 30vh;
+	}
+	
+	.photo-animation-1 .pic2 {
+		height: 20vh;
+	}
+	
+	.photo-animation-1 .pic3 {
+		height: 23vh;
+	}
+	
+	.photo-animation-1 .pic4 {
+		height: 17vh;
+	}
+	
+	.photo-animation-1 .pic5 {
+		height: 13vh;
+	}
+	
+	.photo-animation-2 .pic1 {
+		height: 28vh;
+	}
+	
+	.photo-animation-2 .pic2 {
+		height: 15vh;
+	}
+	
+	.photo-animation-2 .pic3 {
+		height: 22vh;
+	}
+	
+	.photo-animation-2 .pic4 {
+		height: 17vh;
+	}
+	
+	.photo-animation-2 .pic5 {
+		height: 22vh;
+	}
+
+}
+
+@media only screen and (max-width: 800px) {
+
+	.photo-animation-1 .pic1 {
+		height: 25vh;
+	}
+	
+	.photo-animation-1 .pic2 {
+		height: 15vh;
+	}
+	
+	.photo-animation-1 .pic3 {
+		height: 23vh;
+	}
+	
+	.photo-animation-1 .pic4 {
+		height: 12vh;
+	}
+	
+	.photo-animation-1 .pic5 {
+		height: 13vh;
+	}
+	
+	.photo-animation-2 .pic1 {
+		height: 24vh;
+	}
+	
+	.photo-animation-2 .pic2 {
+		height: 15vh;
+	}
+	
+	.photo-animation-2 .pic3 {
+		height: 22vh;
+	}
+	
+	.photo-animation-2 .pic4 {
+		height: 14vh;
+	}
+	
+	.photo-animation-2 .pic5 {
+		height: 20vh;
+	}
+
+}
+
+
 
 @media only screen and (max-width: 550px) {
 
