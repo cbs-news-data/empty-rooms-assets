@@ -1,0 +1,202 @@
+/* styles.css*/
+
+/*main css*/
+
+/*fonts*/
+
+
+@font-face {
+   font-family: 'PublicoHeadline';
+   src: url('../Fonts/PublicoHeadline-Black-05.otf') format('otf'),
+        url('../Fonts/publicoheadline-black-05-webfont.woff2') format('woff2'),
+        url('../Fonts/publicoheadline-black-05-webfont.woff') format('woff');
+
+}
+
+
+
+* {
+   box-sizing: border-box;
+}
+
+img {
+   width: 100%;
+   display: block;
+}
+
+.doors-title {
+   max-width: 980px;
+   text-align: center;
+}
+
+.doors-title h2 {
+   font-family: 'PublicoHeadline';
+   font-weight: 900;
+}
+
+
+.doors-title p {
+   font-family: proxima-nova, sans-serif;
+   font-weight: 400;
+   font-style: normal;
+}
+
+.door-widget-container {
+   max-width: 980px;
+   position: relative;
+   height: 200px;
+}
+
+
+.doors-container {
+     width: 100%; 
+     display: grid; 
+     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+     grid-gap: 5px;     
+     height: 100%;
+     font-family: "Publico Headline", serif;
+     position: absolute;
+     top: 0px;
+     left: 0px;
+     z-index: 1;
+}
+
+.rooms-container {
+     width: 100%; 
+     display: grid; 
+     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+     grid-gap: 5px;     
+     height: 100%;
+     font-family: "Publico Headline", serif;
+     position: absolute;
+     top: 0px;
+     left: 0px;
+}
+
+
+.door {
+     border: 2px solid #101010;        
+     width: 100%;     
+     height: 200px;  
+     position: relative;       
+ }         
+
+.room {
+     border: 2px solid #101010;        
+     width: 100%;     
+     height: 200px;  
+     position: relative;       
+ }
+            
+      
+     .door img {     
+          width: 100%;     
+          height: 100%;     
+          object-fit: cover;     
+     }          
+     .room img {     
+          width: 100%;     
+          height: 100%;     
+          object-fit: cover;     
+     }
+
+.door-photo {             
+     width: 100%;     
+     height: 100%;     
+}     
+
+     .door-photo img {     
+          width: 100%;     
+          height: 100%;     
+          object-fit: cover;
+     }     
+
+.door-name {     
+     position: absolute;     
+     bottom: 0px;     
+     left: 0px;     
+     width: 100%;     
+     height: 25%;         
+     text-align: center;    
+     color: #fff;  
+     background-color: rgba(16, 16, 16, 0.7);   
+     background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.5) 70%, rgba(0,0,0,0) 100%);
+     display: flex;    
+     align-items: center;
+}    
+ 
+.door-name-text {       
+     width: 100%;      
+     text-shadow: 0px 0px 1px #101010;
+     line-height: 1.1;
+     font-family: proxima-nova, sans-serif;
+   font-weight: 400;
+   font-style: normal;
+}
+
+
+/* this is styles for the css animation that makes the door "open" */
+
+.door {
+cursor: pointer;
+/* 1 */ display: flex;
+/* 2 */ perspective: 1200px;
+/* 3 */ transform-style: preserve-3d;
+background-color: rgba(0,0,0,0);
+}
+
+.door-photo {
+/* 1 */ flex-grow: 1;
+/* 3 */ transform-style: preserve-3d;
+/* 4 */ transform-origin: left center;
+/* 4 */ transition: all 0.5s;
+/* 5 */ backface-visibility: hidden;
+/* 6 */ position: relative;
+}
+
+
+.door-photo:before {
+/* 6 */ content: '';
+/* 6 */ position: absolute;
+/* 6 */ top: 0;
+/* 6 */ left: 0;
+/* 6 */ right: 0;
+/* 6 */ bottom: 0;
+/* 7 */ backface-visibility: hidden;
+/* 7 */ transform-style: preserve-3d;
+/* 7 */ transform: rotateY(180deg);
+background: white;
+}
+
+.door:focus .door-photo,
+.door:hover .door-photo {
+/* 8 */ transform: rotate3d(0, 1, 0, 80deg); 
+
+}
+
+
+.door:focus, .door:hover {
+z-index: 1;
+}
+
+@media screen and (max-width: 600px) {
+    .doors-container {grid-template-columns: 1fr 1fr 1fr 1fr;}
+    .rooms-container {grid-template-columns: 1fr 1fr 1fr 1fr;}
+    .door-widget-container {height: 404px;}
+}
+
+@media screen and (max-width: 300px) {
+    .doors-container {grid-template-columns: 1fr 1fr;}
+    .rooms-container {grid-template-columns: 1fr 1fr;}
+    .door-widget-container {height: 816px;}
+}
+
+
+
+
+
+
+
+
+
+
