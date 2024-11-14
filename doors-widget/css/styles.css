@@ -32,6 +32,14 @@ img {
 .doors-title h2 {
    font-family: 'PublicoHeadline';
    font-weight: 900;
+   margin-bottom: 0px;
+}
+
+.doors-title h3 {
+   font-family: proxima-nova, sans-serif;
+   font-weight: 500;
+   font-style: normal;
+   margin-top: 8px;
 }
 
 
